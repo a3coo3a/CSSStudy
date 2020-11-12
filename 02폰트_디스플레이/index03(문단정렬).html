@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style type="text/css">
+      p {
+        border: 1px solid #777;
+      }
+      .tx1 {
+        text-align: left;
+      }
+      .tx2 {
+        text-align: right;
+      }
+      .tx3 {
+        text-align: center;
+      }
+
+      /* 비교대상이 있어야함. 이미지에 대해서 탑으로  */
+      /* 기준이 잡혀있는 나란히 배치된 요소에 적용이 가능 */
+      .tx4 img {
+        vertical-align: top;
+      }
+      .tx5 img {
+        vertical-align: bottom;
+      }
+      .tx6 img {
+        vertical-align: middle;
+      }
+      /* 기준이 되는 태그가 없을때, 박스 높이와 line-height를 동일하게 맞추면 가운데로 오게됨. */
+      .box {
+        height: 100px;
+        line-height: 100px; /* 높이와 고정된 값을 동일하게 주면 가운데로 오게 됨. */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="tx1">안녕하세요</p>
+    <p class="tx2">안녕하세요</p>
+    <p class="tx3">안녕하세요</p>
+    <p class="tx4">
+      안녕
+      <img src="img/css3.png" alt="css3" />
+    </p>
+    <p class="tx5">
+      안녕
+      <img src="img/html5.png" alt="html5" />
+    </p>
+    <p class="tx6">
+      안녕
+      <img src="img/jquery.png" alt="jquery" />
+    </p>
+    <p class="box">헬로우 월드</p>
+  </body>
+</html>
