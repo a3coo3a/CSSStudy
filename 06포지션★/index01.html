@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .list {
+        /* 가운데정렬 */
+        width: 50%;
+        margin: 0 auto;
+      }
+      .content {
+        position: relative;
+      }
+      p {
+        height: 100px;
+        border: 1px solid;
+      }
+      .inner1 {
+        background-color: rgb(253, 216, 168);
+      }
+      .inner2 {
+        background-color: rgb(240, 210, 240);
+        position: absolute;
+        /* 앱솔루트로 부모기준으로 띄어올리때는 
+        부모에게 릴레이션을 함께 주어야 적용이됨. 
+        부모에게 주지 않으면 바디기준으로 올라감 */
+        right: 100px;
+        top: 50px;
+        width: 70px;
+        height: 70px;
+      }
+      .inner3 {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 포지션의 규칙
+      1. 부모요소에  position:relative들어간다.
+        들어가지 않으면 default - body기준으로 좌표가 집합
+      2. left, right중 하나/ top, bottom중에 하나만 선택해서 박스를 이동시킨다
+      -->
+    <div class="list">
+      <div class="content">
+        <p class="inner1">포지션1</p>
+        <p class="inner2">포지션2</p>
+        <p class="inner3">포지션3</p>
+      </div>
+    </div>
+  </body>
+</html>

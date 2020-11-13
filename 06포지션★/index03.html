@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .list-wrap {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid;
+        position: relative;
+        padding: 10px;
+      }
+      .list-img img {
+        width: 50px;
+      }
+      .list-img {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+      .list-content,
+      .list-control {
+        padding-left: 60px;
+      }
+      .list-content textarea {
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        resize: vertical; /* textarea의 수직으로만 수정가능 */
+        padding: 10px;
+      }
+      /* 버튼영역 */
+      .list-control {
+        overflow: hidden;
+      }
+      .list-control .list-input{
+        float: left;
+      }
+      .list-control .right{
+        float: right;
+      }
+      .list-control .list-input input{
+        display: block;
+        width: 100px;
+      }
+      .bottom-list-content{
+        padding-left: 60px;
+        overflow: hidden;
+      }
+      .bottom-left{
+        float: left;
+      }
+      .bottom-right{
+        float: right;
+      }
+      .bottom-right button{
+        display: inline;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list-wrap">
+      <div class="list-img">
+        <img src="img/bgimg.png" alt="붕어" />
+      </div>
+      <div class="list-content">
+        <textarea placeholder="댓글영역"></textarea>
+      </div>
+      <div class="list-control">
+        <div class="list-input">
+          <input type="text" class="left"></input>
+          <input type="text" class="left"></input>
+        </div>
+        <button type="button" class="right">등록하기</button>
+      </div>
+    </div>
+
+    <div class="list-wrap">
+      <div class="list-img">
+        <img src="img/bgimg.png" alt="붕어">
+      </div>
+      <div class="bottom-list-content">
+        <div class="bottom-left">
+          <div><h3>제목</h3></div>
+          <div>내용</div>
+        </div>
+        <div class="bottom-right">
+          <button type="button">삭제</button>
+          <button type="button">수정</button>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
