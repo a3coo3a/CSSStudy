@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      body {
+        background-image: url(img/bg.png);
+      }
+      header .logo {
+        text-align: center;
+        margin: 20px 0px;
+      }
+      header .menu {
+        background-color: black;
+        text-align: center;
+      }
+      header .menu li {
+        display: inline-block;
+        padding: 20px;
+      }
+      header .menu li:hover {
+        background-color: silver;
+      }
+      header .menu li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+      }
+      article {
+        background-color: white;
+      }
+      article .slider {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 40px 0px;
+        overflow: hidden;
+      }
+      article .slider li {
+        /* float의 법칙
+          - 부모의 사이즈가 정해져 있어야 하고, 
+            부모의 overflow:hidden; 있어야함. 
+        */
+        float: left;
+        width: 250px;
+        text-align: center;
+      }
+      section {
+        width: 700px; /* 이미지 사이즈와 맞춤 */
+        margin: 0 auto;
+        position: relative;
+      }
+      section .left {
+        position: absolute;
+        left: -210px;
+        top: 10px;
+      }
+      section .right {
+        position: absolute;
+        right: -210px;
+        top: 10px;
+      }
+      /* body기준 */
+      .top {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: black;
+        text-align: center;
+      }
+      .top a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header>
+      <!-- 로고 -->
+      <div class="logo">
+        <img src="img/logo.jpg" alt="logo" />
+      </div>
+      <!-- 메뉴 -->
+      <nav>
+        <ul class="menu">
+          <li><a href="#">메뉴1</a></li>
+          <li><a href="#">메뉴2</a></li>
+          <li><a href="#">메뉴3</a></li>
+          <li><a href="#">메뉴4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 슬라이더 영역 -->
+    <article>
+      <ul class="slider">
+        <li><img src="img/item01.png" alt="item01" /><br />iPhonePro</li>
+        <li><img src="img/item02.png" alt="item02" /><br />iPhone</li>
+        <li><img src="img/item03.png" alt="item03" /><br />iPad</li>
+        <li><img src="img/item04.png" alt="item04" /><br />iMac</li>
+      </ul>
+    </article>
+
+    <!-- 본문영역 -->
+    <section>
+      <div class="content">
+        <img src="img/ipad.jpg" alt="ipad" />
+      </div>
+      <aside class="left">
+        <p><img src="img/side01.png" alt="side01" /></p>
+        <p><img src="img/side02.png" alt="side02" /></p>
+      </aside>
+      <aside class="right">
+        <p><img src="img/side03.png" alt="side03" /></p>
+        <p><img src="img/side04.png" alt="side04" /></p>
+      </aside>
+    </section>
+
+    <div class="top">
+      <a href="#">top</a>
+    </div>
+  </body>
+</html>
