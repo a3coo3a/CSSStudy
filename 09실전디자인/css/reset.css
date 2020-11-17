@@ -1,5 +1,14 @@
 /*=========== 웹폰트 선언 ===========*/
-@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap");
+@font-face {
+  font-family: "Godo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff")
+      format("woff");
+}
 
 /*=========== 디자인 시작시 전역 설정 ===========*/
 * {
@@ -9,7 +18,7 @@
 }
 body,
 html {
-  font-family: "Song Myung", serif;
+  font-family: "Godo", sans-serif;
   width: 100%;
   min-width: 320px; /* body영역의 최소사이즈 */
 }

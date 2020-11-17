@@ -1,7 +1,204 @@
+/*=========== form, btn윤곽 ==========*/
+.form-control {
+  border-radius: 0;
+}
+.btn {
+  border-radius: 0;
+}
+/*=========== header ==========*/
 .my-header {
   background-color: #263238;
+  position: fixed; /* 바디기준 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
 }
 .my-header a {
   color: white;
   font-size: 15px;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 10px 20px;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: #e1d8f0ce;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: #e1d8f0ce;
+}
+.navbar-toggle {
+  border-color: white;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+}
+
+/*=========== footer ==========*/
+footer {
+  background-color: #263238;
+  color: white;
+  font-size: 14px;
+  padding: 30px 0px;
+  margin-top: 70px;
+}
+/*footer .footer-menu {
+  text-align: right;
+}*/
+footer .footer-menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+footer .footer-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+footer .footer-copyright address {
+  margin-bottom: 0;
+}
+.footer-copyright {
+  overflow: hidden;
+}
+.my-footer-dis {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+}
+
+/*=========== section ==========*/
+section {
+  margin-top: 52px;
+}
+.my-banner {
+  position: relative;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.prod-list,
+.prod-list > li {
+  /* 가장바깥, 숨긴박스 패딩 5px */
+  padding: 5px;
+}
+.prod-list,
+.prod-box {
+  display: block;
+  border: 1px solid #ddd;
+  text-align: center; /* 블럭이나, text 가운데 정렬 */
+}
+.prod-box {
+  position: relative;
+}
+.prod-box .arrow {
+  display: block; /* 높이 넓이를 주기 위해서 */
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #cccccc;
+  color: white;
+  opacity: 1;
+}
+.prod-box .hover {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0096e4;
+  color: white;
+  opacity: 0; /* 투명도 0~1 */
+}
+/* 어디에 호버를 두는지에 따라 조금 다름 */
+/* .prod-box .arrow:hover {
+  opacity: 0;
+}
+.prod-box .hover:hover {
+  opacity: 1;
+} */
+.prod-box:hover > .arrow {
+  opacity: 0;
+}
+.prod-box:hover > .hover {
+  opacity: 1;
+}
+.prod-box:hover {
+  border: 1px solid #0096e4;
+}
+
+.prod-box p {
+  height: 288px;
+  line-height: 288px;
+}
+
+/*=========== nike - section ==========*/
+.prod-img {
+  text-align: center;
+}
+.prod-content {
+  padding: 20px 0px;
+}
+.prod-content,
+.prod-color ul {
+  overflow: hidden;
+}
+.prod-content .prod-info {
+  float: left;
+}
+.prod-info > span {
+  display: block;
+}
+.prod-content .prod-price {
+  float: right;
+}
+.prod-color {
+  margin-top: -60px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* transition (변경할 옵션, 추가, 변경속도, 딜레이초) */
+}
+.prod-color ul li {
+  margin: 20px 0px;
+  float: left;
+}
+.prod-list2:hover .prod-color {
+  opacity: 1;
+}
+
+/*=========== nike - 페이지네이션 ==========*/
+.text-center {
+  overflow: hidden;
+}
+.text-center ul {
+  margin: 0;
+}
+.text-center button {
+  float: right;
+  padding: 6px 12px;
 }
