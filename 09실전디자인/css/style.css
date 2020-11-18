@@ -27,11 +27,13 @@
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: #e1d8f0ce;
+  border-color: #e1d8f0ce;
 }
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
   background-color: #e1d8f0ce;
+  border-color: #e1d8f0ce;
 }
 .navbar-toggle {
   border-color: white;
@@ -47,6 +49,9 @@
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu > li > a {
     color: white;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: rgb(105, 105, 105);
   }
 }
 
@@ -201,4 +206,232 @@ section {
 .text-center button {
   float: right;
   padding: 6px 12px;
+}
+
+/*=========== nike - detail - section ==========*/
+
+.detail1,
+.detail4 .left {
+  font-size: 2rem;
+  color: rgb(95, 95, 95);
+  font-weight: lighter;
+}
+.detail2,
+.detail4 .right {
+  font-size: 3rem;
+}
+.detail3 {
+  font-size: 1.5rem;
+  color: rgb(165, 165, 165);
+}
+.detail3 p {
+  margin-bottom: 0;
+}
+.buttons {
+  overflow: hidden;
+}
+.buttons .my-button {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  font-size: 2rem;
+}
+.detail4 {
+  overflow: hidden;
+  margin-top: 120px;
+}
+.detail4 .left {
+  float: left;
+}
+.detail4 .right {
+  float: right;
+}
+.my-comment,
+.my-comment-read {
+  background-color: #f5f5f5;
+  border: 1px solid #d1d1d1;
+  margin-top: 5rem;
+  padding: 2rem;
+  position: relative;
+}
+.my-comment img,
+.my-comment-read img {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.my-form-group,
+.my-comment-read .readarea {
+  margin-left: 6rem;
+  overflow: hidden;
+}
+.form-group textarea {
+  margin-bottom: 1rem;
+  resize: vertical;
+  height: 100px;
+  transition: height 0.5s ease-in-out;
+  color: #999;
+}
+.form-group textarea:focus {
+  height: 200px;
+}
+.detail-button {
+  float: right;
+}
+.form-group > .left {
+  width: 20rem;
+  float: left;
+}
+input {
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+.form-control {
+  border-radius: 5px;
+}
+.my-comment-read {
+  margin-top: 5px;
+}
+.my-gly {
+  color: rgb(165, 165, 165);
+  float: right;
+  font-size: 13px;
+}
+.readarea {
+  overflow: hidden;
+}
+
+.readarea .left {
+  font-size: 1.5rem;
+  display: inline;
+}
+.readarea .left-date {
+  display: inline;
+  font-size: 1.3rem;
+  color: #636262;
+  margin-left: 1rem;
+}
+.readarea .comment-content {
+  display: block;
+}
+.prod-detail-img {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .detail4 {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .detail4 {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 991px) {
+  .detail4 {
+    margin-top: 40px;
+  }
+  hr {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .detail4 {
+    margin-top: 50px;
+  }
+  hr {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 429px) {
+  .form-group > .left {
+    width: 100%;
+  }
+}
+
+/*=========== join - section ==========*/
+.join-form {
+  /* 하나의 그리드 상자를 정가운데 정렬방법 */
+  margin: 0px auto;
+  /* 가운데 정렬이 되지 않는 이유
+    -> col 관련된 클래스 float을 가지고 있기 때문에 */
+  float: none;
+}
+.join-form form {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 30px;
+  /* 박스의 그림자 - 가로 떨어진 간격 세로 떨어진간격*/
+  box-shadow: 0px 8px 16px #7f748f;
+}
+/* 제목박스 */
+.title-box {
+  width: 250px;
+  margin: 60px auto; /* 박스정렬 */
+  text-align: center; /* 글씨정렬 */
+  padding: 20px 40px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  font-size: large;
+}
+.btn-primary:hover,
+.btn-info:hover {
+  background-color: #e1d8f0ce;
+  border-color: #e1d8f0ce;
+  color: #889aa3;
+}
+@media (max-width: 767px) {
+  /* col-xs과 같은 조건 */
+  .join-form form {
+    padding: 20px;
+  }
+}
+
+/*=========== login - section ==========*/
+.login-form {
+  margin: 0 auto;
+  float: none;
+}
+.btn-info {
+  background-color: #b092dd;
+  border-color: rgb(176, 146, 221);
+}
+.login-form form {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 100px;
+  box-shadow: 0px 8px 16px #7f748f;
+}
+@media (max-width: 1199px) {
+  .login-form form {
+    padding: 50px;
+  }
+}
+
+.form-control:focus {
+  border-color: #b092dd;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(176, 146, 221, 0.6);
+}
+
+/*=========== tabs - section ==========*/
+/* 토글탭 베이직 */
+.tabs-basic li a:hover {
+  background-color: rgb(235, 233, 233);
+  border-color: rgba(0, 0, 0, 0);
+}
+.tabs-basic li a {
+  color: #555;
+  margin: 0;
+}
+.tabs-basic li {
+  width: 25%;
+  text-align: center;
+}
+/* 토글탭 디자인 */
+.my-active-color > li.active > a,
+.my-active-color > li.active > a:focus,
+.my-active-color > li.active > a:hover {
+  color: red;
 }

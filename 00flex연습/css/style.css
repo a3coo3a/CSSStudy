@@ -1,0 +1,156 @@
+/*=========== form, btn윤곽 ==========*/
+.form-control {
+  border-radius: 0;
+}
+.btn {
+  border-radius: 0;
+}
+/*=========== header ==========*/
+.my-header {
+  background-color: #263238;
+  position: fixed; /* 바디기준 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.my-header a {
+  color: white;
+  font-size: 15px;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 10px 20px;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: #e1d8f0ce;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: #e1d8f0ce;
+}
+.navbar-toggle {
+  border-color: white;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+}
+
+/*=========== footer ==========*/
+footer {
+  background-color: #263238;
+  color: white;
+  font-size: 14px;
+  padding: 30px 0px;
+  margin-top: 70px;
+}
+/*footer .footer-menu {
+  text-align: right;
+}*/
+footer .footer-menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+footer .footer-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+footer .footer-copyright address {
+  margin-bottom: 0;
+}
+.footer-copyright {
+  overflow: hidden;
+}
+.my-footer-dis {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+}
+
+/*=========== nike - detail - section ==========*/
+section {
+  margin-top: 52px;
+}
+.detail1,
+.detail4 .left {
+  font-size: 20px;
+  color: rgb(95, 95, 95);
+}
+.detail2,
+.detail4 .right {
+  font-size: 30px;
+}
+.detail3 {
+  font-size: 15px;
+  color: rgb(165, 165, 165);
+}
+.detail3 p {
+  margin-bottom: 0;
+}
+.buttons {
+  overflow: hidden;
+}
+.buttons .my-button {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  font-size: 20px;
+}
+.detail4 {
+  overflow: hidden;
+  margin-top: 120px;
+}
+.detail4 .left {
+  float: left;
+}
+.detail4 .right {
+  float: right;
+}
+.flex-item > img {
+  display: block;
+  margin: 0px auto;
+  height: 100%;
+  vertical-align: middle;
+}
+/*=========== flex)) nike - detail - section ==========*/
+.flex-title {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.flex-hr {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  align-items: stretch;
+}
+.flex-item {
+  flex-basis: 50%;
+}
+.flex-item:nth-child(2) {
+  padding-left: 20px;
+}
+@media (max-width: 767px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+}
