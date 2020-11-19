@@ -1,0 +1,110 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+.title{
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  background-color: white;
+}
+.title-side{
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.title-side li {
+  float: left;
+  margin: 10px;
+}
+nav{
+  background-color: #444444;
+
+}
+.menu{
+  color: white;
+  overflow: hidden;
+  width: 80%;
+  min-width: 328px;
+  margin: 0 auto;
+}
+.menu .t-x {
+  text-align: center;
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.menu .t-m {
+  text-align: center;
+  width: 15%;
+  float: left;
+  padding: 10px;
+}
+.menu div a{
+  text-decoration: none;
+  color: white;
+}
+
+section{
+  margin-top: 154px;
+  height: 2000px;
+  background-color: teal;
+}
+
+.main-top .main-img{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-top .main-textlist{
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  z-index: 20;
+}
+.main-top p {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.main-top .main-text{
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px;
+}
+aside{
+  position: fixed;
+  right: 0px;
+  top: 400px;
+  z-index: 30;
+}
+aside .side-box{
+  background-color: #444444;
+  width: 80px;
+  height: 56px;
+  padding: 10px;
+  border: 1px solid #5c5c5c;
+}
+aside .side-box a{
+  text-decoration: none;
+  color: white;
+}
+aside .side-box a p {
+  font-family: 'Noto Serif KR', serif;
+  text-align: center;
+  margin: 0;
+}
+aside .side-box a .side-s{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4px;
+}
+.row img{
+  width: 220px;
+}
