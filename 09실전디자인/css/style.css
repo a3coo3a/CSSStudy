@@ -430,8 +430,169 @@ input {
   text-align: center;
 }
 /* 토글탭 디자인 */
-.my-active-color > li.active > a,
-.my-active-color > li.active > a:focus,
-.my-active-color > li.active > a:hover {
-  color: red;
+.tabs-style{
+ float: none;
+ margin: 0 auto; 
 }
+.tabs-basic2 > li.active > a,
+.tabs-basic2 > li.active > a:focus,
+.tabs-basic2 > li.active > a:hover{  
+  /* li.active : li의 액티브가 활성화 됬을때를 의미 */
+  background-color: #6c4d9b;
+  color: #efe6fc;
+  border: none;
+}
+/* 기본 a 태그 */
+.tabs-basic2 > li > a {
+  background-color: #492383;
+  margin-right: 0;    /* 여백 없애기 */
+  border-radius: 0;   /* 모서리 둥글게 없애기 */
+  color: #cccccc;
+  border: none;
+}
+/* 직접 a 태그에 호버가 된 경우를 의미 */
+.tabs-basic2 > li > a:hover {
+  background-color: #cca9ff;
+  color: white;
+  border: none;
+}
+/*=========== mypage - section ==========*/
+.table .m-control .m-title{
+  width: 110px;
+  vertical-align: middle;
+}
+.m-control .m-md{  /* 중간사이즈 */
+  width: 200px;
+  display: inline;
+  margin: 0px;
+}
+.m-control .m-sm{   /* 작은사이즈 */
+  width: 150px;
+  display: inline;
+  margin: 0;
+}
+.m-control .m-xsm{   /* 작은사이즈 */
+  width: 80px;
+  display: inline;
+  margin: 0;
+  text-align: center;
+}
+.m-footer{
+  text-align: center;
+}
+.m-header {
+  margin-top: 50px;
+}
+/*=========== facebook - section ==========*/
+
+.fb-area3,
+.fb-area9{
+  position: relative;
+  margin: 10px;
+  padding: 0;
+}
+.line-right{
+  border-right: 1px solid #e1e1e1;
+
+}
+.fb-area3 .fb-img,
+.fb-area9 .fb-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fb-area3 .fb-text-top,
+.fb-area9 .fb-text-top{
+  margin-left: 50px;
+}
+.fb-area3 .fb-text-bottom{
+  margin-top: 40px;
+}
+.fb-area9 .fb-text-top{
+  margin-bottom: 20px;
+}
+.fb-area9 .fb-text-top p{
+  margin-bottom: 0;
+}
+.fb-area9 .fb-text-bottom .bottom-content{
+  padding-bottom: 10px;
+}
+.fb-area9 .count-line{
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0px;
+}
+.fb-area9 .count-line i{
+  color: white;
+  border: 1px solid #492383;;
+  padding: 4px;
+  border-radius: 20px;
+  background-color: #492383;;
+}
+.fb-area9 .fb-iconlist{
+  overflow: hidden;
+  padding-top: 10px;
+}
+.fb-area9 .fb-iconlist .fb-icon{
+  display: inline;
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+@media (max-width: 991px) {
+ .fb-area3{
+   display: none;
+ }
+}
+/*=========== th-facebook - section ==========*/
+.aside-facebook,
+.section-facebook{
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.title-inner{   /* 부모영역 */
+  position: relative;
+}
+.title-inner .profile{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.title-inner .title{
+  padding-left: 60px;
+}
+.content-inner{
+  padding: 10px 0;
+}
+.like-inner,
+.button-inner{
+  border-top: 1px solid #cccccc;
+}
+.like-inner{
+  margin-top: 10px;
+}
+.like-inner a {
+  text-decoration: none;
+  color: black;
+}
+.like-inner img{
+  vertical-align: middle;
+}
+.button-inner{
+  overflow: hidden;
+}
+.button-inner a{
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+}
+.button-inner i {
+  margin: 0 5px;
+}
+@media(max-width:767px){
+.aside-facebook{display: none;}
+}
+
